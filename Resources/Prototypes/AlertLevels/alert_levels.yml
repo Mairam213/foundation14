@@ -14,11 +14,11 @@
       forceEnableEmergencyLights: true
       emergencyLightColor: DodgerBlue
       shuttleTime: 600
-    violet:
-      announcement: alert-level-violet-announcement
+    gray:
+      announcement: alert-level-gray-announcement
       sound: /Audio/Misc/notice1.ogg
-      color: Violet
-      emergencyLightColor: Violet
+      color: Gray
+      emergencyLightColor: Gray
       forceEnableEmergencyLights: true
       shuttleTime: 600
     yellow:
@@ -35,38 +35,50 @@
       emergencyLightColor: Red
       forceEnableEmergencyLights: true
       shuttleTime: 600 #No reduction in time as we don't have swiping for red alert like in /tg/. Shuttle times are intended to create friction, so having a way to brainlessly bypass that would be dumb.
-    gamma:
-      announcement: alert-level-gamma-announcement
+    White:
+      announcement: alert-level-white-announcement
       selectable: false
       sound:
         path: /Audio/_Sunrise/Misc/siren.ogg # Sunrise-Edit
         params:
           volume: -2
       disableSelection: true
-      color: PaleVioletRed
-      emergencyLightColor: PaleVioletRed
+      color: White
+      emergencyLightColor: White
       forceEnableEmergencyLights: true
     delta:
       announcement: alert-level-delta-announcement
       selectable: false
       sound:
-        path: /Audio/Misc/delta.ogg
+        path: /Audio/Misc/delta_alt.ogg
         params:
           volume: -3
       disableSelection: true
       color: DarkRed
-      emergencyLightColor: Orange
+      emergencyLightColor: DarkRed
       forceEnableEmergencyLights: true
-      shuttleTime: 1200
-    epsilon:
-      announcement: alert-level-epsilon-announcement
+      shuttleTime: 2400
+    coldsilver:
+      announcement: alert-level-coldsilver-announcement
       selectable: false
       sound:
-        path: /Audio/Misc/epsilon.ogg
+        path: /Audio/Misc/notice1.ogg
+        params:
+          volume: -3
+      disableSelection: true
+      color: White
+      emergencyLightColor: White
+      forceEnableEmergencyLights: true
+      shuttleTime: 2400
+    foxtrot:
+      announcement: alert-level-foxtrot-announcement
+      selectable: false
+      sound:
+        path: /Audio/Misc/notice1.ogg
         params:
           volume: -2
       disableSelection: true
       color: DarkViolet
       emergencyLightColor: DarkViolet
       forceEnableEmergencyLights: true
-      shuttleTime: 1200
+      shuttleTime: 2400
